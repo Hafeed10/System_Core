@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../layouts/Title';
 import ProjectsCard from '../project/ProjectCard';
 import './Project.css';
-import { Link } from 'react-router-dom';
+
 import localProjects from './ProductData'; 
 const Projects = () => {
   // Local project data
@@ -17,7 +17,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {localProjects.length > 0 ? (
           localProjects.map((project, index) => (
             <ProjectsCard
@@ -34,11 +34,6 @@ const Projects = () => {
             No projects available at the moment.
           </p>
         )}
-      </div>
-      <div className="flex justify-end items-center mt-10 cursor-pointer">
-       <Link to="/viewprojects" className='bg-designColor p-2 px-6 rounded-lg text-white font-semibold hover:bg-opacity-80 duration-300' smooth={true} duration={500}>
-         View All Projects
-       </Link>
       </div>
     </section>
   );
