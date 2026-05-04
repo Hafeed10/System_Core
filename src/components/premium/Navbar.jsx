@@ -1,6 +1,6 @@
 import React from 'react';
-import { FiGrid, FiTerminal, FiDatabase, FiCpu, FiMail } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { FiGrid, FiTerminal, FiCpu } from 'react-icons/fi';
+
 
 const Navbar = () => {
   return (
