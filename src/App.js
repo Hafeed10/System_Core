@@ -1,44 +1,29 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-
-import Banner from "./components/banner/Banner";
-import Contact from "./components/contact/Contact";
-import Features from "./components/features/Features";
-import Footer from "./components/footer/Footer";
-import FooterBottom from "./components/footer/FooterBottom";
-import Navbar from "./components/navbar/Navbar";
-import Projects from "./components/project/Project";
-import Resume from "./components/resume/Resume";
-import Testimonial from "./components/tesimonial/Testimonial";
-import ViewProjects from "./components/project/ViewProjects";
+import Navbar from "./components/premium/Navbar";
+import Hero from "./components/premium/Hero";
+import CoreCompetencies from "./components/premium/CoreCompetencies";
+import Philosophy from "./components/premium/Philosophy";
+import Experiments from "./components/premium/Experiments";
+import NetworkStatus from "./components/premium/NetworkStatus";
+import Footer from "./components/premium/Footer";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText px-4">
-      <Navbar />
-      <div className="max-w-screen-xl mx-auto">
-        <Routes>
-          {/* Home Page */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Banner />
-                <Features />
-                <Projects />
-                <Resume />
-                <Testimonial />
-                <Contact />
-              </>
-            }
-          />
-
-          {/* View Project Page */}
-          <Route path="/viewprojects" element={<ViewProjects />} />
-        </Routes>
-
+    <div className="w-full min-h-screen bg-bodyColor text-lightText font-bodyFont relative">
+      {/* Grid background overlay */}
+      <div className="grid-overlay"></div>
+      
+      {/* Content wrapper relative to grid */}
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <CoreCompetencies />
+          <Philosophy />
+          <Experiments />
+          <NetworkStatus />
+        </main>
         <Footer />
-        <FooterBottom />
       </div>
     </div>
   );
