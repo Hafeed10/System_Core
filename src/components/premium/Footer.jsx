@@ -10,10 +10,10 @@ const Footer = () => {
         </div>
         
         <div className="flex items-center gap-6 text-xs text-gray-500 tracking-widest uppercase">
-            <a href="#" className="hover:text-designColor transition-colors">Documentation</a>
-            <a href="#" className="hover:text-designColor transition-colors">Changelog</a>
-            <a href="#" className="hover:text-designColor transition-colors">Security</a>
-            <a href="#" className="hover:text-designColor transition-colors">Contact</a>
+            <a href="#documentation" className="hover:text-designColor transition-colors">Documentation</a>
+            <a href="#changelog" className="hover:text-designColor transition-colors">Changelog</a>
+            <a href="#security" className="hover:text-designColor transition-colors">Security</a>
+            <a href="#contact" className="hover:text-designColor transition-colors">Contact</a>
         </div>
 
         <div className="flex items-center gap-4 text-gray-400">
